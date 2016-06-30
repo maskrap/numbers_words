@@ -6,7 +6,7 @@ describe('Fixnum#translate')  do
     expect((13).translate()).to(eq("thirteen"))
   end
   it("Returns number in word form from twenty to twenty-nine")  do
-    expect((23).translate()).to(eq("twenty three"))
+    expect((28).translate()).to(eq("twenty eight"))
   end
   it("Returns number in word form from twenty to one hundred")  do
     expect((55).translate()).to(eq("fifty five"))
