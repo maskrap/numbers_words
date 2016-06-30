@@ -20,7 +20,6 @@ number_array = []
     if (input_ten.length() == 1)
     tens_num = (input_ten).join().to_i()
     word_med = two_digits.fetch(tens_num)
-  # binding.pry
     else
       tens_num = (input_ten.pop()).to_i()
       word_med = two_digits.fetch(tens_num)
@@ -41,9 +40,7 @@ number_array = []
 
   define_method(:translate) do
     if (self.>=(0)) && (self.<(20))
-      word_small =
       word_small = one_to_nineteen.fetch(self)
-      word_small
 
     elsif (self.>=(20)) && (self.<(100))
       word_smallb = one(self)
@@ -61,16 +58,3 @@ number_array = []
   end
 
 end
-
-
-
-
-# word_medium =
-# number_array = (self.to_s).split("")
-# single_num = number_array.pop().to_i
-# tens_num = number_array.pop().to_i
-# word_small = one_to_nineteen.fetch(single_num)
-# word_med = two_digits.fetch(tens_num)
-# number_word = word_med.concat("-" + word_small)
-
-# one_to_nineteen = {"one" => 1, "two" => 2, "three" => 3, "four" => 4, "five" => 5, "six" => 6, "seven" => 7, "eight" => 8, "nine" => 9, "ten" => 10, "eleven" => 11, "twelve" => 12, "thirteen" => 13, "fourteen" => 14, "fifteen" => 15, "sixteen" => 16, "seventeen" => 17, "eighteen" => 18, "nineteen" => 19}
